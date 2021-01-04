@@ -1,0 +1,43 @@
+Consider the Bag interface given below. Write and test an ArrayBag class the implements the
+interface.
+
+	public interface Bag
+	{
+		public boolean isEmpty(); // returns true if bag is empty, false otherwise
+		public void print(); // prints the content of the bag
+		public void add(String s); // adds string s to the bag
+		public void remove(String s); // remove all occurrences of string s
+		public int count(String s); // returns number of occurrences of string s in the bag
+	}
+
+Guidelines
+The assignment is to be completed individually. Questions are based on Week 1 and 2 content.
+
+You are allowed to use all of the code given in the lectures (for example, the implementation of the
+methods of the ArrayList class). In those cases, make sure you properly credit its source.
+
+Design
+Students are expected to structure the code as indicated in the UML class diagram:
+
+Main
+	+static void main(String[] args)
+	+Main()
+
+<<Interface>>
+Bag
+	+boolean isEmpty()
+	+void print()
+	+void add(String s)
+	+void remove(String s)
+	+int count(String s)
+
+ArrayBag
+	-int SIZE
+	+ArrayBag()
+	-int[] bag
+	-int length
+	+boolean isEmpty()
+	+void print()
+	+void add(String s)
+	+void remove(String s)
+	+int count(String s)
